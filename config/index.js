@@ -6,7 +6,7 @@ module.exports = {
     siteDescription: "Christopher Chou's Personal Website",
     siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
     siteLanguage: "en_US",
-    siteIcon: "content/favicon.png", // Relative to gatsby-config file
+    siteIcon: "content/monogram.png", // Relative to gatsby-config file
     seoTitleSuffix: "Christopher Chou", // SEO title syntax will be e.g. "Imprint - {seoTitleSuffix}"
 
     splashScreen: false, // Set this to true if you want to use the splash screen
@@ -29,21 +29,21 @@ module.exports = {
             name: "Github",
             url: "https://github.com/BabyChouSr"
         },
-        // {
-        //     name: "Behance",
-        //     url: "https://www.behance.net/konstanmnster"
-        // },
+        {
+             name: "Resume",
+             url: "http://cswithchris.com/media/Christopher%20Chou%20CV.pdf"
+        },
     ],
   
     navLinks: {
         menu: [
             {
-                name: "Articles",
-                url: "/#articles",
-            },
-            {
                 name: "About Me",
                 url: "/#about",
+            },
+            {
+                name: "Education",
+                url: "/#education",
             },
             {
                 name: "Projects",
