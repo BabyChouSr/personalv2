@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
+    'gatsby-plugin-emotion',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-robots-txt`,

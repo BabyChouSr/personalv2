@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useContext} from "react"
 import PropTypes from "prop-types"
 import { graphql } from "gatsby"
 
@@ -13,6 +13,7 @@ import Contact from "../components/sections/contact"
 import Education from "../components/sections/education"
 import Organizations from "../components/sections/organizations"
 import { splashScreen, seoTitleSuffix } from "../../config"
+import Context from "../context/index"
 
 const IndexPage = ({ data }) => {
   const { seoTitle, useSeoTitleSuffix } = data.index.edges[0].node.frontmatter

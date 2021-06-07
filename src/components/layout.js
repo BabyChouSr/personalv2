@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import styled, { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider} from "styled-components"
 import "typeface-roboto"
-
-import Context from "../context/"
+import Context from "../context/index"
 import Theme from "../styles/Theme"
 import GlobalStyle from "../styles/GlobalStyle"
 import Header from "./header"
 import Footer from "./footer"
+
 
 // https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
 if (typeof window !== "undefined") {
@@ -32,18 +32,18 @@ const Layout = ({ children, splashScreen }) => {
   const [state, setState] = useState({
     isIntroDone: splashScreen ? false : true,
   })
-
   return (
-    <StyledLayoutWrapper>
+      <StyledLayoutWrapper>
       <Context.Provider value={{ state, setState }}>
         <ThemeProvider theme={Theme}>
-          <GlobalStyle />
+          <GlobalStyle/>
           <Header />
           <main id="main-content">{children}</main>
           <Footer />
         </ThemeProvider>
       </Context.Provider>
     </StyledLayoutWrapper>
+
   )
 }
 

@@ -19,7 +19,7 @@ module.exports = {
     socialMedia: [
         {
             name: "Linkedin",
-            url: "https://www.linkedin.com/in/christopher-chou-b346aa1b0/"
+            url: "https://www.linkedin.com/in/cchou03"
         },
         {
             name: "Blog",
@@ -31,7 +31,7 @@ module.exports = {
         },
         {
              name: "Resume",
-             url: "http://cswithchris.com/media/Christopher%20Chou%20CV.pdf"
+             url: "https://drive.google.com/file/d/1JjY0HkdslKro5R7l8yW0YXH1NRRnl7_6/view?usp=sharing"
         },
     ],
   
