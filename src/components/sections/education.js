@@ -198,6 +198,7 @@ const StyledProject = styled(motion.div)`
 `
 
 const Education = ({ content }) => {
+  
     const sectionDetails = content[0].node
     const projects = content.slice(1, content.length)
   
@@ -234,6 +235,8 @@ const Education = ({ content }) => {
       setOnScreen(initial)
     }, [])
   
+    
+
     // Required for animating the title
     const tRef = useRef()
     const tOnScreen = useOnScreen(tRef)

@@ -1,6 +1,6 @@
 module.exports = {
 
-    author: "@konstantinmuenster",
+    author: "@BabyChouSr",
     siteTitle: "Christopher Chou",
     siteShortTitle: "Christopher Chou", // Used as logo text in header, footer, and splash screen
     siteDescription: "Christopher Chou's Personal Website",
@@ -31,7 +31,7 @@ module.exports = {
         },
         {
              name: "Resume",
-             url: "https://drive.google.com/file/d/1JjY0HkdslKro5R7l8yW0YXH1NRRnl7_6/view?usp=sharing"
+             url: "https://drive.google.com/file/d/1Zjrx_hgt-F1W60_0O5kcPpxsLyAzTHXe/view?usp=sharing"
         },
     ],
   
