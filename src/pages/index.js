@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
       <Education content = {data.education.edges}/>
       <Interests content={data.interests.edges} />
       <Projects content={data.projects.edges} />
-      <Organizations content={data.organizations.edges} />
+      {/* <Organizations content={data.organizations.edges} /> */}
       <Contact content={data.contact.edges} />
     </Layout>
   )

@@ -19,19 +19,11 @@ module.exports = {
     socialMedia: [
         {
             name: "Linkedin",
-            url: "https://www.linkedin.com/in/cchou03"
-        },
-        {
-            name: "Blog",
-            url: "http://cswithchris.com/"
+            url: "https://www.linkedin.com/in/chrisychou"
         },
         {
             name: "Github",
             url: "https://github.com/BabyChouSr"
-        },
-        {
-             name: "Resume",
-             url: "https://drive.google.com/file/d/1Zjrx_hgt-F1W60_0O5kcPpxsLyAzTHXe/view?usp=sharing"
         },
     ],
   
