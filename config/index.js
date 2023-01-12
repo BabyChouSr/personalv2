@@ -29,22 +29,22 @@ module.exports = {
   
     navLinks: {
         menu: [
-            {
-                name: "About Me",
-                url: "/#about",
-            },
-            {
-                name: "Education",
-                url: "/#education",
-            },
-            {
-                name: "Projects",
-                url: "/#projects",
-            },
-            {
-                name: "Organizations",
-                url: "/#organizations",
-            },            
+            // {
+            //     name: "About Me",
+            //     url: "/#about",
+            // },
+            // {
+            //     name: "Education",
+            //     url: "/#education",
+            // },
+            // {
+            //     name: "Projects",
+            //     url: "/#projects",
+            // },
+            // {
+            //     name: "Organizations",
+            //     url: "/#organizations",
+            // },            
         ],
         button: {
             name: "Contact",
@@ -53,13 +53,13 @@ module.exports = {
     },
 
     footerLinks: [
-        {
-            name: "Privacy",
-            url: "/privacy"
-        },
-        {
-            name: "Imprint",
-            url: "/imprint"
-        }
+        // {
+        //     name: "Privacy",
+        //     url: "/privacy"
+        // },
+        // {
+        //     name: "Imprint",
+        //     url: "/imprint"
+        // }
     ]
 }

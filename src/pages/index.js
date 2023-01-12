@@ -23,15 +23,15 @@ const IndexPage = ({ data }) => {
       <SEO
         title={withSuffix ? `${seoTitle} - ${seoTitleSuffix}` : `${seoTitle}`}
       />
-      <Hero content={data.hero.edges} />
+      {/* <Hero content={data.hero.edges} /> */}
       {/* Articles is populated via Medium RSS Feed fetch */}
       <About content={data.about.edges} />
       {/* <Articles/> */}
-      <Education content = {data.education.edges}/>
-      <Interests content={data.interests.edges} />
-      <Projects content={data.projects.edges} />
+      {/* <Education content = {data.education.edges}/> */}
+      {/* <Interests content={data.interests.edges} /> */}
+      {/* <Projects content={data.projects.edges} /> */}
       {/* <Organizations content={data.organizations.edges} /> */}
-      <Contact content={data.contact.edges} />
+      {/* <Contact content={data.contact.edges} /> */}
     </Layout>
   )
 }

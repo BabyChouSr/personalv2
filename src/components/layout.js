@@ -39,7 +39,7 @@ const Layout = ({ children, splashScreen }) => {
           <GlobalStyle/>
           <Header />
           <main id="main-content">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </Context.Provider>
     </StyledLayoutWrapper>

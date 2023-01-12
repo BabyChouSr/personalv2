@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { motion, useAnimation } from "framer-motion"
+import Social from "../social"
 
 import { useOnScreen } from "../../hooks/"
 import Context from "../../context/"
@@ -67,6 +68,8 @@ const About = ({ content }) => {
   const { isIntroDone } = useContext(Context).state
   const tControls = useAnimation()
   const iControls = useAnimation()
+  const sControls = useAnimation()
+
 
   // Required for animating the text content
   const tRef = useRef()
@@ -78,11 +81,18 @@ const About = ({ content }) => {
 
   // Only trigger animations if the intro is done or disabled
   useEffect(() => {
-    if (isIntroDone) {
-      if (tOnScreen) tControls.start({ opacity: 1, y: 0 })
-      if (iOnScreen) iControls.start({ opacity: 1, x: 0 })
+    const pageLoadSequence = async () => {
+      if (isIntroDone) {
+      tControls.start({ opacity: 1, y: 0 })
+      await iControls.start({ opacity: 1, x: 0 })
+      await sControls.start({
+        opacity: 1,
+        x: 0,
+      })
     }
-  }, [isIntroDone, tControls, iControls, tOnScreen, iOnScreen])
+    }
+    pageLoadSequence()
+  }, [isIntroDone, tControls, iControls, sControls, tOnScreen, iOnScreen])
 
   return (
     <StyledSection id="about">
@@ -97,6 +107,9 @@ const About = ({ content }) => {
           <div className="text-content">
             <MDXRenderer>{body}</MDXRenderer>
           </div>
+          <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
+          <Social fontSize=".95rem" padding=".3rem 1.25rem" width="auto" />
+        </motion.div>
         </motion.div>
         <motion.div
           className="image-content"
